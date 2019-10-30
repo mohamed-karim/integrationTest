@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="idShare" prefHeight="645.0" prefWidth="947.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AffichageController">
+   <children>
+      <Button fx:id="idbtrr" layoutX="579.0" layoutY="440.0" mnemonicParsing="false" onAction="#retour" prefHeight="31.0" prefWidth="150.0" text="retour" />
+      <Button fx:id="idshare" layoutX="192.0" layoutY="440.0" mnemonicParsing="false" onAction="#share" prefHeight="31.0" prefWidth="135.0" text="Share" />
+      <JFXButton fx:id="idpdf" layoutX="387.0" layoutY="440.0" onAction="#convertPDF" prefHeight="31.0" prefWidth="142.0" text="Convertion PDF" />
+      <ImageView fx:id="LBimageview" fitHeight="172.0" fitWidth="307.0" layoutX="283.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="LBContenu" layoutX="92.0" layoutY="288.0" prefHeight="103.0" prefWidth="689.0" text="Contenue" textAlignment="CENTER" />
+      <Label fx:id="Lbtitreevent" layoutX="97.0" layoutY="136.0" prefHeight="21.0" prefWidth="135.0" text="TitreEvent">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Label fx:id="LBDate" layoutX="615.0" layoutY="78.0" prefHeight="21.0" prefWidth="142.0" text="Label" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Bell MT Bold" size="32.0" />
+         </font></Label>
+      <Label fx:id="LBnomarticle" layoutX="97.0" layoutY="86.0" prefHeight="21.0" prefWidth="326.0" text="Nom Article" textAlignment="CENTER">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

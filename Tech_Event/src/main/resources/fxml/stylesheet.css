@@ -11,7 +11,6 @@
 	-fx-background-color : #6747CD  ;
 	
 }
-
 .forgetBtn{
 -fx-text-fill:#a3a3a3;
 }
@@ -69,39 +68,4 @@
     -fx-border-color: #7C8184;
     -fx-border-width: 1px 0px 0px 0px;
     
-}
-.table-view {
-    -fx-base: #008B8B;
-    -fx-control-inner-background: #000000;
-    -fx-background-color: #000000;
-    -fx-table-cell-border-color: transparent;
-    -fx-table-header-border-color: transparent;
-    -fx-padding: 5;
-}
-.table-row-cell{
-    -fx-background-color: -fx-table-cell-border-color, #000000;
-    -fx-background-insets: 0, 0 0 1 0;
-    -fx-padding: 0.0em;
-    -fx-table-cell-border-color: transparent;
-     -fx-table-header-border-color: transparent;
-    /* 0 */
-}
-.table-row-cell {
-    -fx-cell-size: 100px;
-} .button{
-      -fx-padding: 5 22 5 22;   
-    -fx-border-color: #C0C0C0;
-    -fx-border-width: 5;
-    -fx-background-radius: 0;
-    -fx-background-color: #1d1d1d;
-    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    -fx-font-size: 11pt;
-    -fx-text-fill: #d8d8d8;
-    -fx-background-insets: 0 0 0 0, 0, 1, 2;
-}
-.label {
-    -fx-font-size: 11pt;
-    -fx-font-family: "Segoe UI Semibold";
-    -fx-text-fill: black;
-    -fx-opacity: 0.6;
 }
