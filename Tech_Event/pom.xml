@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>Tech_Event</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.23</version>
+        </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.controlsfx/openjfx-dialogs -->
+<dependency>
+    <groupId>org.controlsfx</groupId>
+    <artifactId>openjfx-dialogs</artifactId>
+    <version>1.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+
+
+
+
+        <dependency>
+   <groupId>de.jensd</groupId>
+   <artifactId>fontawesomefx</artifactId>
+   <version>8.9</version>
+</dependency>
+<dependency>
+   <groupId>com.jfoenix</groupId>
+   <artifactId>jfoenix</artifactId>
+   <version>1.6.0</version>
+</dependency>
+        <dependency>
+            <groupId>com.innoventsolutions.birt.runtime</groupId>
+            <artifactId>org.apache.commons.codec_1.9.0.v20170208-1614</artifactId>
+            <version>4.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>3.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>8.40.11</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/openjfx-dialogs -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>openjfx-dialogs</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>8.40.13</version>
+        </dependency>
+        <dependency>
+            <groupId>activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.0.2</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>eu.hansolo.enzo</groupId>
+            <artifactId>Enzo</artifactId>
+            <version>0.3.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.4.4</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="bp" prefHeight="326.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AuthentificationController">
+   <children>
+      <Label layoutX="97.0" layoutY="124.0" prefHeight="21.0" prefWidth="81.0" text="Login" textFill="BLUE" />
+      <Label layoutX="97.0" layoutY="190.0" prefHeight="21.0" prefWidth="81.0" text="password" textFill="BLUE"/>
+      <TextField fx:id="tfLogin" layoutX="201.0" layoutY="119.0" promptText="Login"  />
+      <TextField fx:id="tfpassword" layoutX="201.0" layoutY="185.0" promptText="password" />
+      <Button fx:id="btnAuthen" layoutX="217.0" layoutY="239.0" mnemonicParsing="false" onAction="#authentification" prefHeight="31.0" prefWidth="100.0"   text="Log in" />
+      <Button fx:id="btninscrire" layoutX="218.0" layoutY="281.0" mnemonicParsing="false" onAction="#inscription" prefHeight="31.0" prefWidth="100.0"   text="sign in" />
+   </children>
+</AnchorPane>
