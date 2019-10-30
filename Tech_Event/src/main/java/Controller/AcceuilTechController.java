@@ -5,9 +5,6 @@
  */
 package Controller;
 
-import Entite.User;
-import Service.UserService;
-import fxml.AuthentificationController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -42,15 +39,9 @@ public class AcceuilTechController implements Initializable {
     @FXML
     private HBox forma;
     @FXML
+    private Pane content1;
+    @FXML
     private Pane content;
-    @FXML
-    private HBox id_comta;
-    @FXML
-    private Label evnta1;
-    @FXML
-    private HBox id_recla;
-    @FXML
-    private Label evnta11;
 
     /**
      * Initializes the controller class.
@@ -62,71 +53,17 @@ public class AcceuilTechController implements Initializable {
 
     @FXML
     private void btn_afficherTouse(MouseEvent event) {
-        int id=AuthentificationController.test;
-          User p = new User();
-         UserService us =new UserService();
         
-         String test= us.rechercherparrole(id);
          if (event.getTarget() == id_evta) {
 			try {
-				AnchorPane newLoadedPane = FXMLLoader.load(getClass().getResource("/fxml/AffichageForum.fxml"));
+				AnchorPane newLoadedPane = FXMLLoader.load(getClass().getResource("/fxml/afficherE.fxml"));
 				content.getChildren().clear();
 				content.getChildren().add(newLoadedPane);
 			} catch (IOException ex) {
 				Logger.getLogger(AcceuilTechController.class.getName()).log(Level.SEVERE, null, ex);
 			}
          }
-         if ((event.getTarget() == id_comta)&&(test.equals("admin"))) {
-			try {
-				AnchorPane newLoadedPane = FXMLLoader.load(getClass().getResource("/fxml/GstionCompteAdmin.fxml"));
-                                System.err.println("hhhhhhhhh");
-				content.getChildren(
-                                ).clear();
-				content.getChildren().add(newLoadedPane);
-			} catch (IOException ex) {
-				Logger.getLogger(AcceuilTechController.class.getName()).log(Level.SEVERE, null, ex);
-			}
-         }
-          if ((event.getTarget() == id_comta)&&((test.equals("MembreActif"))||(test.equals("Membre")))) {
-			try {
-				AnchorPane newLoadedPane = FXMLLoader.load(getClass().getResource("/fxml/GestionCompteMembre.fxml"));
-                                System.err.println("hhhhhhhhh");
-				content.getChildren(
-                                ).clear();
-				content.getChildren().add(newLoadedPane);
-			} catch (IOException ex) {
-				Logger.getLogger(AcceuilTechController.class.getName()).log(Level.SEVERE, null, ex);
-			}
-          }
-           if ((event.getTarget() == id_recla)&&(test.equals("admin"))) {
-			try {
-				AnchorPane newLoadedPane = FXMLLoader.load(getClass().getResource("/fxml/ReclamationAdmin.fxml"));
-                                System.err.println("hhhhhhhhh");
-				content.getChildren(
-                                ).clear();
-				content.getChildren().add(newLoadedPane);
-			} catch (IOException ex) {
-				Logger.getLogger(AcceuilTechController.class.getName()).log(Level.SEVERE, null, ex);
-			}
-          
-         }
-         if ((event.getTarget() == id_recla)&&((test.equals("MembreActif"))||(test.equals("Membre")))) {
-			try {
-				AnchorPane newLoadedPane = FXMLLoader.load(getClass().getResource("/fxml/ReclamationUser.fxml"));
-                                System.err.println("hhhhhhhhh");
-				content.getChildren(
-                                ).clear();
-				content.getChildren().add(newLoadedPane);
-			} catch (IOException ex) {
-				Logger.getLogger(AcceuilTechController.class.getName()).log(Level.SEVERE, null, ex);
-			}
-                        
-         
-
         
     }
     
-   
-    
-
-    }}
+}

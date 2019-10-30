@@ -22,7 +22,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -41,9 +40,7 @@ public static int test ;
    @FXML
     private Button btnAuthen;
      @FXML
-private AnchorPane bp; 
-       @FXML
-    private Button btninscrire;
+private BorderPane bp; 
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -74,25 +71,6 @@ private AnchorPane bp;
             stage.show();
         }
     } 
-    @FXML
-    private void inscription(ActionEvent event) throws SQLException, IOException {
-        //Preferences userPreferences = Preferences.userRoot();
-              
-        System.err.println("inscrire");
-        
-        
-        Stage stage = (Stage) bp.getScene().getWindow();
-                System.err.println("*****");
-            Parent root=FXMLLoader.load(getClass().getClassLoader().getResource("fxml/Inscription.fxml"));
-      
-            System.err.println("go to inscription");
-          
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        
-    }         
+    
+    
 }
-    
-    
-

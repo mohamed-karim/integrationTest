@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="bp" prefHeight="643.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.ModifierEController">
+   <children>
+      <TableView id="table" fx:id="TTm" layoutX="30.0" layoutY="28.0" prefHeight="327.0" prefWidth="642.0" stylesheets="@stylesheet.css">
+         <columns>
+            <TableColumn fx:id="imageEm" prefWidth="75.0" text="IMAGE" />
+            <TableColumn fx:id="Titrem" prefWidth="75.0" text="Titrem" />
+            <TableColumn fx:id="empm" prefWidth="75.0" text="emplacementm" />
+            <TableColumn fx:id="dateDm" prefWidth="75.0" text="dateDm" />
+            <TableColumn fx:id="DATEFm" prefWidth="92.0" text="DATEFm" />
+            <TableColumn fx:id="NBRPm" prefWidth="58.0" text="NBRPm" />
+            <TableColumn fx:id="DESCm" prefWidth="75.0" text="DESCm" />
+            <TableColumn fx:id="CATEGm" prefWidth="75.0" text="CATEGm" />
+         </columns>
+      </TableView>
+      <ScrollBar layoutX="23.0" layoutY="54.0" orientation="VERTICAL" prefHeight="302.0" prefWidth="14.0" />
+      <Button fx:id="supprimE" layoutX="67.0" layoutY="365.0" mnemonicParsing="false" onAction="#supprimerE" text="supprimer" />
+      <Button fx:id="up" layoutX="182.0" layoutY="365.0" mnemonicParsing="false" onAction="#up" text="modifier" />
+      <Button fx:id="sha" layoutX="496.0" layoutY="378.0" mnemonicParsing="false" onAction="#shar" prefHeight="25.0" prefWidth="121.0" text="Share" />
+   </children>
+</AnchorPane>

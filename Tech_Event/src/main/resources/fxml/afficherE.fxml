@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane77" fx:id="bp" prefHeight="615.0" prefWidth="924.0" styleClass="aaaaa" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.AfficherEController">
+   <children>
+      <Button fx:id="a" layoutX="244.0" layoutY="489.0" mnemonicParsing="false" onAction="#affiche" prefHeight="56.0" prefWidth="228.0" text="Gerer mes evennemrnt">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TableView fx:id="TT" layoutY="125.0" onMouseClicked="#getImage" prefHeight="316.0" prefWidth="686.0" style="-fx-background-color: black;">
+        <columns>
+          <TableColumn fx:id="imageE" prefWidth="75.0" text="image" />
+          <TableColumn fx:id="Titre" prefWidth="75.0" text="Titre" />
+            <TableColumn fx:id="emp" prefWidth="75.0" text="Emplacement" />
+            <TableColumn fx:id="dateD" prefWidth="75.0" text="Date_debut" />
+            <TableColumn fx:id="DATEF" prefWidth="75.0" text="Emplacement" />
+            <TableColumn fx:id="NBRP" prefWidth="75.0" text="Nombre_place" />
+            <TableColumn fx:id="DESC" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="CATEG" prefWidth="75.0" text="Categorie" />
+            <TableColumn fx:id="showa" prefWidth="75.0" text="nbr Reservation" />
+        </columns>
+      </TableView>
+      <Button id="buttonAj" fx:id="ajterbtn" layoutY="488.0" mnemonicParsing="false" onAction="#versaj" prefHeight="56.0" prefWidth="212.0" stylesheets="@stylesheet.css" text="Ajouter Evennement">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="recherchee" layoutX="278.0" layoutY="53.0" onKeyTyped="#recherche_function" prefHeight="33.0" prefWidth="259.0" />
+      <ImageView fx:id="imgeev" fitHeight="235.0" fitWidth="202.0" layoutX="708.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="versemplacement" layoutX="500.0" layoutY="489.0" mnemonicParsing="false" onAction="#vers_emplacement" prefHeight="56.0" prefWidth="212.0" text="show emplacement" textOverrun="CENTER_ELLIPSIS" />
+      <Label layoutX="183.0" layoutY="59.0" prefHeight="21.0" prefWidth="84.0" text="Rrcherche" />
+   </children>
+</AnchorPane>
